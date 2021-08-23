@@ -1,0 +1,82 @@
+.add-post
+  margin-bottom: 3rem
+  padding: 1.5rem 2rem
+
+  background-color: $form-color
+  box-shadow: 0 15px 25px rgba($black, .45)
+  border-radius: 5px
+
+  @include breakpoint($mobile-bp)
+    padding: 1.5rem
+
+  &__form
+    display: flex
+    align-items: flex-end
+
+    &-actions
+      display: flex
+      justify-content: flex-end
+      width: 12rem
+      flex-shrink: 0
+
+      @include breakpoint($mobile-bp)
+        width: 9rem
+
+  &__textarea
+    display: block
+    flex-grow: 1
+    height: 3.4rem
+    overflow: hidden
+
+    border: none
+    background: transparent
+    resize: none
+
+    font-family: inherit
+    font-size: 1.5rem
+    color: $white
+
+    &::placeholder
+      color: #D2D2D2
+
+  &__file,
+  &__send
+    display: block
+    width: 4.4rem
+    height: 4.4rem
+
+    border: none
+    border-radius: 50%
+    cursor: pointer
+
+    transition: background-color .2s linear
+
+    @include breakpoint($mobile-bp)
+      width: 3.4rem
+      height: 3.4rem
+
+  &__file
+    background: #EBEBEB url("../img/add-photo.svg") center no-repeat
+    cursor: pointer
+
+    input
+      display: none
+
+    &:hover
+      background-color: darken(#EBEBEB, 10%)
+
+    @include breakpoint($mobile-bp)
+      background-size: 1.8rem
+
+  &__send
+    margin-left: 1.5rem
+    background: $blue url("../img/send.svg") center no-repeat
+
+    font-size: 0
+    color: transparent
+
+    &:hover
+      background-color: darken($blue, 15%)
+
+    @include breakpoint($mobile-bp)
+      background-size: 1.5rem

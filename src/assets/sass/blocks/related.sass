@@ -1,0 +1,32 @@
+.related
+  padding-bottom: .5rem
+
+  border-bottom: 1px solid #1C1C1C
+
+  &__list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    @include breakpoint($tablet-bp)
+      flex-direction: column
+
+    &-item
+      width: 50%
+      max-width: 250px
+      margin-bottom: 2.5rem
+
+      @include breakpoint($tablet-bp)
+        width: 100%
+
+    &-title
+      font-size: 1.4rem
+      color: #F3EBA2
+      font-weight: 500
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+
+    &-date
+      font-size: 1.2rem
+      color: #828282

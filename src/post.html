@@ -1,0 +1,177 @@
+---
+layout: default
+title: Post
+---
+
+<article class="post">
+  <div class="post__actions">
+    <a href="index.html">вернуться назад</a>
+    <a href="#" data-modal="share-modal">
+      поделиться<img class="post__actions-icon" src="assets/img/share.svg" alt="поделиться">
+    </a>
+  </div>
+
+  <div class="post__header post__header--open">
+    <h1 class="post__title post__title--open">Как писать код быстро и безболезненно?</h1>
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2020-06-21 10:30">21.06.2020</time>
+      </li>
+      <li class="post__data-item">
+        <a href="#">создание сайтов</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="post__content">
+    <div class="post__text">
+      <h2>Title h2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+
+      <h3>Title h3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+
+      <h4>Title h4</h4>
+
+      <p>
+        <img src="assets/img/image.jpg" alt="">
+      </p>
+
+      <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ul>
+
+      <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ol>
+
+      <table>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </table>
+
+      <p>
+        <span class="fr-video">
+          <iframe src="https://www.youtube.com/embed/p4zbV1MBJNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </span>
+      </p>
+    </div>
+    <!-- /.post__text -->
+
+    <div class="related">
+      <h3 class="post__subtitle">Интересно почитать</h3>
+
+      <ul class="related__list">
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как я сходил на FrontEnd Conf 2021 Как писать код быстро и безболезненно?</a>
+          </h4>
+          <time class="related__list-date" datetime="2020-06-21">21.06.2020</time>
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как писать код быстро и безболезненно?</a>
+          </h4>
+          <time class="related__list-date" datetime="2020-06-21">21.06.2020</time>
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+          </h4>
+          <time class="related__list-date" datetime="2020-06-21">21.06.2020</time>
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+          </h4>
+          <time class="related__list-date" datetime="2020-06-21">21.06.2020</time>
+        </li>
+      </ul>
+    </div>
+    <!-- /.related -->
+  </div>
+  <!-- post__content -->
+
+  <h3 class="post__subtitle">Обсуждение</h3>
+  
+  <form class="form" action="/" method="POST">
+    <div class="form__group">
+      <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария" data-autoresize></textarea>
+      <span class="form__line"></span>
+    </div>
+    <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+  </form>
+
+  <ul class="comments">
+    <li class="comments__item">
+      <div class="comments__header">
+        <img class="comments__avatar" src="https://placehold.it/30" alt="">
+
+        <div class="comments__author">
+          <div class="comments__name">Дмитрий Валак</div>
+          <time class="comments__pubdate" datetime="2020-12-21 19:22">1 неделю назад</time>
+        </div>
+      </div>
+      <div class="comments__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis debitis laboriosam voluptatem molestiae quas natus eligendi odio dolor veritatis repudiandae illum illo optio veniam, vel nemo necessitatibus delectus aliquam dolorem sint sequi id, alias accusamus ipsum est. Dolor sit voluptatibus distinctio fuga similique animi at! Velit deserunt minus nam illo?
+      </div>
+      <button class="comments__reply" type="button">ответить</button>
+
+      <ul class="comments">
+        <li class="comments__item">
+          <div class="comments__header">
+            <img class="comments__avatar" src="https://placehold.it/30" alt="">
+    
+            <div class="comments__author">
+              <div class="comments__name">Дмитрий Валак</div>
+              <time class="comments__pubdate" datetime="2020-12-21 19:22">1 неделю назад</time>
+            </div>
+          </div>
+          <div class="comments__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis debitis laboriosam voluptatem molestiae quas natus eligendi odio dolor veritatis repudiandae illum illo optio veniam, vel nemo necessitatibus delectus aliquam dolorem sint sequi id, alias accusamus ipsum est. Dolor sit voluptatibus distinctio fuga similique animi at! Velit deserunt minus nam illo?
+          </div>
+          <button class="comments__reply" type="button">ответить</button>
+        </li>
+      </ul>
+    </li>
+    <li class="comments__item">
+      <div class="comments__header">
+        <img class="comments__avatar" src="https://placehold.it/30" alt="">
+
+        <div class="comments__author">
+          <div class="comments__name">Дмитрий Валак</div>
+          <time class="comments__pubdate" datetime="2020-12-21 19:22">1 неделю назад</time>
+        </div>
+      </div>
+      <div class="comments__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis debitis laboriosam voluptatem molestiae quas natus eligendi odio dolor veritatis repudiandae illum illo optio veniam, vel nemo necessitatibus delectus aliquam dolorem sint sequi id, alias accusamus ipsum est. Dolor sit voluptatibus distinctio fuga similique animi at! Velit deserunt minus nam illo?
+      </div>
+      <button class="comments__reply" type="button">ответить</button>
+
+      <ul class="comments">
+        <li class="comments__item">
+          <div class="comments__header">
+            <img class="comments__avatar" src="https://placehold.it/30" alt="">
+    
+            <div class="comments__author">
+              <div class="comments__name">Дмитрий Валак</div>
+              <time class="comments__pubdate" datetime="2020-12-21 19:22">1 неделю назад</time>
+            </div>
+          </div>
+          <div class="comments__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis debitis laboriosam voluptatem molestiae quas natus eligendi odio dolor veritatis repudiandae illum illo optio veniam, vel nemo necessitatibus delectus aliquam dolorem sint sequi id, alias accusamus ipsum est. Dolor sit voluptatibus distinctio fuga similique animi at! Velit deserunt minus nam illo?
+          </div>
+          <button class="comments__reply" type="button">ответить</button>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</article>
+<!-- /.post -->

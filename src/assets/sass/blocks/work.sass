@@ -1,0 +1,67 @@
+.work
+  display: flex
+  margin-bottom: 3rem
+
+  background-color: $secondary
+  box-shadow: 0 15px 25px rgba($black, .35)
+  border-radius: 5px
+  overflow: hidden
+
+  @include breakpoint($mobile-bp)
+    flex-direction: column
+
+  &__preview
+    width: 31rem
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+    @include breakpoint($mobile-bp)
+      width: 100%
+      height: 15rem
+
+
+  &__content
+    display: flex
+    flex-direction: column
+    padding: 2.5rem
+    max-width: 29rem
+
+    @include breakpoint($mobile-bp)
+      max-width: none
+      padding: 1.5rem
+
+  &__title
+    margin-bottom: 3rem
+
+    font-size: 2.4rem
+    font-weight: 500
+    color: $white
+
+    @include breakpoint($mobile-bp)
+      margin-bottom: 2rem
+
+    a
+      color: inherit
+
+  &__desc
+    margin-bottom: 3rem
+
+    font-size: 1.6rem
+    line-height: 1.6
+    font-weight: 300
+    color: #d2d2d2
+
+    @include breakpoint($mobile-bp)
+      margin-bottom: 2rem
+
+      font-size: 1.4rem
+
+  &__footer
+    margin-top: auto
+    text-align: right
+
+    @include breakpoint($mobile-bp)
+      text-align: left

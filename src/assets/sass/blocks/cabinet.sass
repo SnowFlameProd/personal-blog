@@ -1,0 +1,33 @@
+.cabinet
+  display: flex
+  justify-content: space-between
+
+  @include breakpoint($mobile-bp)
+    flex-direction: column
+
+  &__form
+    max-width: 34rem
+    width: 100%
+
+    @include breakpoint($mobile-bp)
+      order: 2
+
+  &__avatar
+    img
+      display: block
+      margin-bottom: 1.5rem
+
+    @include breakpoint($mobile-bp)
+      order: 1
+      margin-bottom: 2rem
+
+  &__file
+    font-size: 1.4rem
+    color: #107EFF
+    cursor: pointer
+    text-decoration: underline
+
+    &:hover
+      text-decoration: none
+    input
+      display: none
